@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/enterScreen">
+
+    <fragment
+        android:id="@+id/enterScreen"
+        android:name="com.example.game16.fragmets.EnterScreen"
+        android:label="fragment_enter_screen"
+        tools:layout="@layout/fragment_enter_screen" >
+        <action
+            android:id="@+id/action_enterScreen_to_scoreListScreen"
+            app:destination="@id/scoreListScreen" />
+        <action
+            android:id="@+id/action_enterScreen_to_infoScreen"
+            app:destination="@id/infoScreen" />
+        <action
+            android:id="@+id/action_enterScreen_to_levelsFragment"
+            app:destination="@id/levelsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/scoreListScreen"
+        android:name="com.example.game16.fragmets.ScoreListScreen"
+        android:label="fragment_score_list_screen"
+        tools:layout="@layout/fragment_score_list_screen" />
+    <fragment
+        android:id="@+id/gameScreen"
+        android:name="com.example.game16.fragmets.GameScreen"
+        android:label="fragment_game_screen"
+        tools:layout="@layout/fragment_game_screen" />
+    <fragment
+        android:id="@+id/infoScreen"
+        android:name="com.example.game16.fragmets.InfoScreen"
+        android:label="fragment_info_screen"
+        tools:layout="@layout/fragment_info_screen" />
+    <fragment
+        android:id="@+id/easyLevelFragment"
+        android:name="com.example.game16.fragmets.EasyLevelFragment"
+        android:label="fragment_easy_level"
+        tools:layout="@layout/fragment_easy_level" />
+    <fragment
+        android:id="@+id/levelsFragment"
+        android:name="com.example.game16.fragmets.LevelsFragment"
+        android:label="fragment_levels"
+        tools:layout="@layout/fragment_levels" >
+        <action
+            android:id="@+id/action_levelsFragment_to_easyLevelFragment"
+            app:destination="@id/easyLevelFragment" />
+        <action
+            android:id="@+id/action_levelsFragment_to_gameScreen"
+            app:destination="@id/gameScreen" />
+        <action
+            android:id="@+id/action_levelsFragment_to_hardLevelFragment"
+            app:destination="@id/hardLevelFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hardLevelFragment"
+        android:name="com.example.game16.fragmets.HardLevelFragment"
+        android:label="fragment_hard_level"
+        tools:layout="@layout/fragment_hard_level" />
+</navigation>

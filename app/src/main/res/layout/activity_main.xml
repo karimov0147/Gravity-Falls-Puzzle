@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_fragment_container"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:defaultNavHost = "true"
+        app:navGraph = "@navigation/navigation"/>
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="30dp"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:fontFamily="casual"-->
+<!--        android:text="Step : 0"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="26sp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:fontFamily="casual"-->
+<!--        android:text="Time "-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="26sp"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/chronometer2"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <Chronometer-->
+<!--        android:id="@+id/chronometer2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:layout_marginEnd="30dp"-->
+<!--        android:fontFamily="casual"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="26sp"-->
+<!--        android:text="0:00"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/pause"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="casual"-->
+<!--        android:shadowColor="#FFFFFF"-->
+<!--        android:shadowDx="3"-->
+<!--        android:shadowDy="3"-->
+<!--        android:shadowRadius="2"-->
+<!--        android:text="Pause"-->
+<!--        android:textColor="#EC0F0F"-->
+<!--        android:textSize="30sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        android:layout_marginBottom="18dp"-->
+<!--        android:visibility="invisible"/>-->
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/relativeLayout"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/realitive_background"-->
+<!--        android:gravity="center"-->
+<!--        android:padding="26dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/btn_1"-->
+<!--            style="@style/custom_button"-->
+<!--            android:layout_alignParentStart="true"-->
+
+<!--            android:text="1" />-->
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/btn_2"-->
+<!--            style="@style/custom_button"-->
+<!--            android:layout_toEndOf="@id/btn_1"-->
+<!--            android:text="2" />-->
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/btn_3"-->
+<!--            style="@style/custom_button"-->
+<!--            android:layout_toEndOf="@id/btn_2"-->
+<!--            android:text="3" />-->
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/btn_4"-->
+<!--            style="@style/custom_button"-->
+
+<!--            android:layout_toEndOf="@id/btn_3"-->
+<!--            android:text="4" />-->
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/btn_5"-->
+<!--            style="@style/custom_button"-->
+<!--            android:layout_below="@id/btn_1"-->
+
+<!--            android:text="5" />-->
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/btn_6"-->
+<!--            style="@style/custom_button"-->
+<!--            android:layout_below="@id/btn_2"-->
+
+
+<!--            android:layout_toEndOf="@id/btn_5"-->
+<!--            android:text="6" />-->
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/btn_7"-->
+<!--            style="@style/custom_button"-->
+<!--            android:layout_below="@id/btn_3"-->
+
+
+<!--            android:layout_toEndOf="@id/btn_6"-->
+<!--            android:text="7" />-->
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/btn_8"-->
+<!--            style="@style/custom_button"-->
+<!--            android:layout_below="@id/btn_4"-->
+
+
+<!--            android:layout_toEndOf="@id/btn_7"-->
+<!--            android:text="8" />-->
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/btn_9"-->
+<!--            style="@style/custom_button"-->
+<!--            android:layout_below="@id/btn_5"-->
+
+<!--            android:text="9" />-->
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/btn_10"-->
+<!--            style="@style/custom_button"-->
+<!--            android:layout_below="@id/btn_6"-->
+
+
+<!--            android:layout_toEndOf="@id/btn_9"-->
+<!--            android:text="10" />-->
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/btn_11"-->
+<!--            style="@style/custom_button"-->
+<!--            android:layout_below="@id/btn_7"-->
+
+
+<!--            android:layout_toEndOf="@id/btn_10"-->
+<!--            android:text="11" />-->
+
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/btn_12"-->
+<!--            style="@style/custom_button"-->
+<!--            android:layout_below="@id/btn_8"-->
+
+
+<!--            android:layout_toEndOf="@id/btn_11"-->
+<!--            android:text="12" />-->
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/btn_13"-->
+<!--            style="@style/custom_button"-->
+<!--            android:layout_below="@id/btn_9"-->
+
+<!--            android:text="13" />-->
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/btn_14"-->
+<!--            style="@style/custom_button"-->
+<!--            android:layout_below="@id/btn_10"-->
+
+
+<!--            android:layout_toEndOf="@id/btn_13"-->
+<!--            android:text="14" />-->
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/btn_15"-->
+<!--            style="@style/custom_button"-->
+<!--            android:layout_below="@id/btn_11"-->
+
+
+<!--            android:layout_toEndOf="@id/btn_14"-->
+<!--            android:text="15" />-->
+
+
+
+<!--    </RelativeLayout>-->
+
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:clickable="true"-->
+<!--        android:id="@+id/appCompatButton2"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/appCompatButton"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintHorizontal_chainStyle="packed"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        android:layout_marginTop="45dp"-->
+<!--        android:background="@drawable/buttons"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"-->
+<!--        android:text="Start"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:fontFamily="casual"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textSize="18sp"-->
+<!--        android:focusable="true" />-->
+
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/appCompatButton"-->
+<!--        android:clickable="true"-->
+<!--        android:focusable="true"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_marginTop="45dp"-->
+<!--        android:background="@drawable/buttons_two"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/appCompatButton2"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"-->
+<!--        android:text="Reset"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:fontFamily="casual"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textSize="18sp"/>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

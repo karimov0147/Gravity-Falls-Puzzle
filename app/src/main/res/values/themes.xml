@@ -1,0 +1,55 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Game16" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">#245361</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:navigationBarColor">#D1000000</item>
+    </style>
+    
+    <style name="custom_button">
+        <item name="android:layout_height">68dp</item>
+        <item name="android:layout_width">68dp</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:textSize">22sp</item>
+        <item name="fontFamily">@font/font_of_choise</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:background">@drawable/butn_backround</item>
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+
+    <style name="custom_button_easy">
+        <item name="android:layout_height">88dp</item>
+        <item name="android:layout_width">88dp</item>
+        <item name="android:layout_margin">6dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="fontFamily">@font/font_of_choise</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:background">@drawable/butn_backround</item>
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+
+    <style name="custom_button_hard">
+        <item name="android:layout_height">56dp</item>
+        <item name="android:layout_width">56dp</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="fontFamily">@font/font_of_choise</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:background">@drawable/butn_backround</item>
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+
+
+</resources>
